@@ -53,20 +53,20 @@ If you want to get inspiration or just show something directly to your clients, 
 
 | Dashboard Page | Icons Page | User Profile Page  | Tables Page | Login Page | Register Page  |
 | --- | --- | ---  | --- | --- | ---  |
-| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/dashboard.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/dashboard?ref=bvad-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/icons.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/icons?ref=bvad-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/user.png?raw=true)](https://demos.creative-tim.com/boostrap-vue-argon-dashboard/#/profile?ref=bvad-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/tables.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/tables?ref=bvad-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/login.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/login?ref=bvad-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/register.png?raw=true)](https://demos.creative-tim.com/boostrap-vue-argon-dashboard/#/register?ref=bvad-github-readme)  
+| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/dashboard.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/dashboard?ref=bvad-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/icons.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/icons?ref=bvad-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/user.png?raw=true)](https://demos.creative-tim.com/bootsrap-vue-argon-dashboard/#/profile?ref=bvad-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/tables.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/tables?ref=bvad-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/login.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/login?ref=bvad-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/register.png?raw=true)](https://demos.creative-tim.com/bootsrap-vue-argon-dashboard/#/register?ref=bvad-github-readme)  
 
 [View More](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/dashboard)
 
 
 ## Quick start
 
-- [Download from Github](https://github.com/creativetimofficial/boostrap-vue-argon-dashboard/archive/master.zip).
+- [Download from Github](https://github.com/creativetimofficial/bootsrap-vue-argon-dashboard/archive/master.zip).
 - [Download from Creative Tim](https://www.creative-tim.com/product/bootstrap-vue-argon-dashboard?ref=bvad-github-readme).
 - Clone the repo: `git clone https://github.com/creativetimofficial/bootstrap-vue-argon-dashboard.git`.
 
 
 ## Documentation
-The documentation for the BoostrapVue Argon Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/bootstrap-vue/colors/argon-dashboard).
+The documentation for the BootsrapVue Argon Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/bootstrap-vue/colors/argon-dashboard).
 
 
 ## File Structure
@@ -202,7 +202,7 @@ We use GitHub Issues as the official bug tracker for the BootstrapVue Argon Dash
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=creativetim)
 - [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=bvad-github-readme) (earn money)
 - [Blog Creative Tim](http://blog.creative-tim.com/?ref=bvad-github-readme)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=bvad-github-readme) from Creative Tim˘
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=bvad-github-readme) from Creative Tim
 - [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=bvad-github-readme) from Creative Tim
 - [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=bvad-github-readme) from Creative Tim
 - [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=bvad-github-readme) from Creative Tim
