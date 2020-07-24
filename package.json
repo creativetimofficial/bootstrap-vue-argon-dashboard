@@ -31,7 +31,9 @@
     "vue-clipboard2": "^0.3.0",
     "vue-flatpickr-component": "^8.1.2",
     "vue-router": "^3.0.6",
-    "vue2-transitions": "^0.2.3"
+    "vue2-transitions": "^0.2.3",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",
