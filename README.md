@@ -111,6 +111,10 @@ Within the download you'll find the following directories and files:
         |   |-- LoadingPanel.vue
         |   |-- Modal.vue
         |   |-- NavbarToggleButton.vue
+        |   |-- Breadcrumb
+        |   |   |-- Breadcrumb.vue
+        |   |   |-- BreadcrumbItem.vue
+        |   |   |-- RouteBreadcrumb.vue
         |   |-- Cards
         |   |   |-- Card.vue
         |   |   |-- StatsCard.vue
