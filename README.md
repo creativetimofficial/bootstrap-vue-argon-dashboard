@@ -47,7 +47,7 @@ If you want to get inspiration or just show something directly to your clients, 
 
 | BootstrapVue | NodeJS | Laravel |
 |  ---  | ---  | --- |
-| [![BootstrapVue Argon Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/vue-argon-dashboard.jpg?raw=true)](https://www.creative-tim.com/product/bootstrap-vue-argon-dashboard?ref=bvad-github-readme) | [![Argon Dashboard NodeJS](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-nodejs/argon-dashboard-nodejs.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-nodejs?ref=bvad-github-readme) | [![Argon Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-laravel/argon-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-laravel?ref=bvad-github-readme) |
+| [![BootstrapVue Argon Dashboard](https://github.com/creativetimofficial/public-assets/blob/master/bootstrap-vue-argon-dashboard/opt_ad_bootstrapvue_thumbnail.jpg?raw=true)](https://www.creative-tim.com/product/bootstrap-vue-argon-dashboard?ref=bvad-github-readme) | [![Argon Dashboard NodeJS](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-nodejs/argon-dashboard-nodejs.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-nodejs?ref=bvad-github-readme) | [![Argon Dashboard Laravel](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-laravel/argon-dashboard-laravel.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-laravel?ref=bvad-github-readme) |
 
 ## Demo
 
@@ -73,7 +73,7 @@ The documentation for the BootsrapVue Argon Dashboard is hosted at our [website]
 Within the download you'll find the following directories and files:
 
 ```
-|-- Vue Argon Dashboard
+|-- BootstrapVue Argon Dashboard
     |-- .gitignore
     |-- CHANGELOG.md
     |-- ISSUES_TEMPLATE.md
@@ -82,88 +82,114 @@ Within the download you'll find the following directories and files:
     |-- babel.config.js
     |-- package.json
     |-- public
+    |   |-- img
     |   |-- favicon.ico
     |   |-- index.html
-    |   |-- manifest.json
-    |   |-- robots.txt
-    |   |-- img
     |-- src
-        |-- App.vue
-        |-- main.js
-        |-- registerServiceWorker.js
-        |-- router.js
         |-- assets
         |   |-- logo.png
         |   |-- scss
+        |   |   |-- core
+        |   |   |-- custom
         |   |   |-- argon.scss
         |   |-- vendor
-        |       |-- @fortawesome
         |       |-- nucleo
         |-- components
         |   |-- Badge.vue
         |   |-- BaseAlert.vue
         |   |-- BaseButton.vue
-        |   |-- BaseCheckbox.vue
         |   |-- BaseDropdown.vue
         |   |-- BaseHeader.vue
-        |   |-- BaseInput.vue
-        |   |-- BaseNav.vue
         |   |-- BasePagination.vue
         |   |-- BaseProgress.vue
-        |   |-- BaseRadio.vue
         |   |-- BaseSlider.vue
-        |   |-- BaseSwitch.vue
         |   |-- BaseTable.vue
-        |   |-- Card.vue
+        |   |-- ButtonCheckbox.vue
+        |   |-- ButtonRadioGroup.vue
         |   |-- CloseButton.vue
+        |   |-- index.js
+        |   |-- LoadingPanel.vue
         |   |-- Modal.vue
         |   |-- NavbarToggleButton.vue
-        |   |-- StatsCard.vue
-        |   |-- stringUtils.js
+        |   |-- Cards
+        |   |   |-- Card.vue
+        |   |   |-- StatsCard.vue
         |   |-- Charts
         |   |   |-- BarChart.js
-        |   |   |-- DoughnutChart.js
-        |   |   |-- LineChart.js
-        |   |   |-- PieChart.js
         |   |   |-- config.js
         |   |   |-- globalOptionsMixin.js
+        |   |   |-- LineChart.js
         |   |   |-- optionHelpers.js
+        |   |   |-- roundedCornersExtension.js
+        |   |-- Collapse
+        |   |   |-- Collapse.vue
+        |   |   |-- CollapseItem.vue
+        |   |-- Inputs
+        |   |   |-- BaseCheckbox.vue
+        |   |   |-- BaseInput.vue
+        |   |   |-- BaseRadio.vue
+        |   |-- Navbar
+        |   |   |-- BaseNav.vue
+        |   |   |-- NavbarToggleButton.vue
+        |   |-- NotificationPlugin
+        |   |   |-- index.js
+        |   |   |-- Notification.vue
+        |   |   |-- Notifications.vue
         |   |-- SidebarPlugin
+        |   |   |-- index.js
         |   |   |-- SideBar.vue
         |   |   |-- SidebarItem.vue
-        |   |   |-- index.js
         |   |-- Tabs
-        |       |-- PillsLayout.vue
-        |       |-- Tab.vue
-        |       |-- TabPane.vue
-        |       |-- Tabs.vue
-        |       |-- TabsLayout.vue
+        |   |   |-- Tab.vue
+        |   |   |-- Tabs.vue
         |-- directives
         |   |-- click-ouside.js
-        |-- layout
-        |   |-- AuthLayout.vue
-        |   |-- Content.vue
-        |   |-- ContentFooter.vue
-        |   |-- DashboardLayout.vue
-        |   |-- DashboardNavbar.vue
-        |   |-- LoadingMainPanel.vue
         |-- plugins
-        |   |-- argon-dashboard.js
+        |   |-- dashboard-plugin.js
         |   |-- globalComponents.js
         |   |-- globalDirectives.js
+        |-- routes
+        |   |-- router.js
+        |   |-- routes.js
+        |   |-- starterRouter.js
+        |-- util
+        |   |-- throttle.js
         |-- views
             |-- Dashboard.vue
+            |-- GoogleMaps.vue
             |-- Icons.vue
-            |-- Login.vue
-            |-- Maps.vue
-            |-- Register.vue
-            |-- Tables.vue
-            |-- UserProfile.vue
+            |-- NotFoundPage.vue
+            |-- RegularTables.vue
             |-- Dashboard
             |   |-- PageVisitsTable.vue
             |   |-- SocialTrafficTable.vue
+            |-- Layout
+            |   |-- Content.vue
+            |   |-- ContentFooter.vue
+            |   |-- DashboardLayout.vue
+            |   |-- DashboardNavbar.vue
+            |-- Maps
+                |-- APY_KEY.js
+            |-- Pages
+                |-- UserProfile
+                |-- AuthLayout.vue
+                |-- Login.vue
+                |-- Register.vue
+                |-- UserProfile.vue
+            |-- Starter
+                |-- SampleFooter.vue
+                |-- SampleLayout.vue
+                |-- SampleNavbar.vue
+                |-- SamplePage.vue
             |-- Tables
-                |-- ProjectsTable.vue
+                |-- RegularTables
+                |-- projects.js
+                |-- users.js
+        |-- App.vue
+        |-- main.js
+        |-- polyfills.js
+
+
 ```
 
 
