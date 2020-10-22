@@ -1,7 +1,7 @@
 <template>
   <div class="main-content bg-default">
     <base-nav
-      v-model="showMenu"
+	  :show="showMenu"
       :transparent="true"
       menu-classes="justify-content-end"
       class="navbar-horizontal navbar-main navbar-top navbar-dark"
