@@ -4,7 +4,7 @@ import Chart from "chart.js";
 export const Charts = {
   mode: "light", //(themeMode) ? themeMode : 'light';
   fonts: {
-    base: "Open Sans"
+    base: "Open Sans",
   },
   colors: {
     gray: {
@@ -16,7 +16,7 @@ export const Charts = {
       600: "#8898aa",
       700: "#525f7f",
       800: "#32325d",
-      900: "#212529"
+      900: "#212529",
     },
     theme: {
       default: "#172b4d",
@@ -25,12 +25,12 @@ export const Charts = {
       info: "#11cdef",
       success: "#2dce89",
       danger: "#f5365c",
-      warning: "#fb6340"
+      warning: "#fb6340",
     },
     black: "#12263F",
     white: "#FFFFFF",
-    transparent: "transparent"
-  }
+    transparent: "transparent",
+  },
 };
 
 function chartOptions() {
@@ -46,58 +46,58 @@ function chartOptions() {
         defaultFontFamily: fonts.base,
         defaultFontSize: 13,
         layout: {
-          padding: 0
+          padding: 0,
         },
         legend: {
           display: false,
           position: "bottom",
           labels: {
             usePointStyle: true,
-            padding: 16
-          }
+            padding: 16,
+          },
         },
         elements: {
           point: {
             radius: 0,
-            backgroundColor: colors.theme["primary"]
+            backgroundColor: colors.theme["primary"],
           },
           line: {
             tension: 0.4,
             borderWidth: 4,
             borderColor: colors.theme["primary"],
             backgroundColor: colors.transparent,
-            borderCapStyle: "rounded"
+            borderCapStyle: "rounded",
           },
           rectangle: {
-            backgroundColor: colors.theme["warning"]
+            backgroundColor: colors.theme["warning"],
           },
           arc: {
             backgroundColor: colors.theme["primary"],
             borderColor: mode == "dark" ? colors.gray[800] : colors.white,
-            borderWidth: 4
-          }
+            borderWidth: 4,
+          },
         },
         tooltips: {
           enabled: true,
           mode: "index",
-          intersect: false
-        }
+          intersect: false,
+        },
       },
       pie: {
         tooltips: {
-          mode: "point"
-        }
+          mode: "point",
+        },
       },
       doughnut: {
         tooltips: {
-          mode: "point"
+          mode: "point",
         },
         cutoutPercentage: 83,
-        legendCallback: function(chart) {
+        legendCallback: function (chart) {
           let data = chart.data;
           let content = "";
 
-          data.labels.forEach(function(label, index) {
+          data.labels.forEach(function (label, index) {
             let bgColor = data.datasets[0].backgroundColor[index];
 
             content += '<span class="chart-legend-item">';
@@ -110,9 +110,9 @@ function chartOptions() {
           });
 
           return content;
-        }
-      }
-    }
+        },
+      },
+    },
   };
 
   // yAxes
@@ -126,17 +126,17 @@ function chartOptions() {
       zeroLineWidth: 1,
       zeroLineColor: mode === "dark" ? colors.gray[900] : colors.gray[200],
       zeroLineBorderDash: [2],
-      zeroLineBorderDashOffset: [2]
+      zeroLineBorderDashOffset: [2],
     },
     ticks: {
       beginAtZero: true,
       padding: 10,
-      callback: function(value) {
+      callback: function (value) {
         if (!(value % 10)) {
           return value;
         }
-      }
-    }
+      },
+    },
   });
 
   // xAxes
@@ -146,12 +146,12 @@ function chartOptions() {
       drawOnChartArea: false,
       drawTicks: false,
       lineWidth: 1,
-      zeroLineWidth: 1
+      zeroLineWidth: 1,
     },
     ticks: {
-      padding: 20
+      padding: 20,
     },
-    maxBarThickness: 10
+    maxBarThickness: 10,
   });
 
   return options;
@@ -170,9 +170,9 @@ export function initGlobalOptions() {
 export const basicOptions = {
   maintainAspectRatio: false,
   legend: {
-    display: false
+    display: false,
   },
-  responsive: true
+  responsive: true,
 };
 export let blueChartOptions = {
   dataset: {
@@ -180,11 +180,11 @@ export let blueChartOptions = {
       {
         gridLines: {
           color: Charts.colors.gray[700],
-          zeroLineColor: Charts.colors.gray[700]
-        }
-      }
-    ]
-  }
+          zeroLineColor: Charts.colors.gray[700],
+        },
+      },
+    ],
+  },
 };
 
 export let lineChartOptionsBlue = {
@@ -197,7 +197,7 @@ export let lineChartOptionsBlue = {
     xPadding: 12,
     mode: "nearest",
     intersect: 0,
-    position: "nearest"
+    position: "nearest",
   },
   responsive: true,
   scales: {
@@ -207,30 +207,31 @@ export let lineChartOptionsBlue = {
         gridLines: {
           drawBorder: false,
           color: "rgba(29,140,248,0.0)",
-          zeroLineColor: "transparent"
+          zeroLineColor: "transparent",
         },
         ticks: {
           suggestedMin: 60,
           suggestedMax: 125,
           padding: 20,
-          fontColor: "#9e9e9e"
-        }
-      }
+          fontColor: "#9e9e9e",
+        },
+      },
     ],
 
+    // eslint-disable-next-line no-dupe-keys
     dataset: [
       {
         barPercentage: 1.6,
         gridLines: {
           drawBorder: false,
           color: "rgba(29,140,248,0.1)",
-          zeroLineColor: "transparent"
+          zeroLineColor: "transparent",
         },
         ticks: {
           padding: 20,
-          fontColor: "#9e9e9e"
-        }
-      }
-    ]
-  }
+          fontColor: "#9e9e9e",
+        },
+      },
+    ],
+  },
 };

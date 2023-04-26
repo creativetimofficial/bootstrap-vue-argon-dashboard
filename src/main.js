@@ -5,7 +5,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/bootstrap-vue-argon-dashboard
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 * Coded by www.creative-tim.com
 
@@ -26,6 +26,6 @@ Vue.use(DashboardPlugin);
 /* eslint-disable no-new */
 new Vue({
   el: "#app",
-  render: h => h(App),
-  router
+  render: (h) => h(App),
+  router,
 });

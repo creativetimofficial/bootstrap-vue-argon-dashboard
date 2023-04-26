@@ -1,7 +1,7 @@
 import { initGlobalOptions } from "@/components/Charts/config";
-import './roundedCornersExtension'
+import "./roundedCornersExtension";
 export default {
   mounted() {
     initGlobalOptions();
-  }
-}
+  },
+};
