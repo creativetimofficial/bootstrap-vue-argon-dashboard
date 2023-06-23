@@ -5,14 +5,14 @@
 </template>
 <script>
 export default {
-  name: 'breadcrumb-item',
+  name: "breadcrumb-item",
   props: {
     active: {
       type: Boolean,
       default: false,
-      description: 'Whether breadcrumb item is active'
-    }
-  }
+      description: "Whether breadcrumb item is active",
+    },
+  },
 };
 </script>
 <style></style>

@@ -11,12 +11,12 @@
 </template>
 <script>
 export default {
-  name: 'tab-pane',
-  props: ['title', 'id'],
-  inject: ['addTab', 'removeTab'],
+  name: "tab-pane",
+  props: ["title", "id"],
+  inject: ["addTab", "removeTab"],
   data() {
     return {
-      active: false
+      active: false,
     };
   },
   mounted() {
@@ -27,7 +27,7 @@ export default {
       this.$el.parentNode.removeChild(this.$el);
     }
     this.removeTab(this);
-  }
+  },
 };
 </script>
 <style></style>

@@ -1,8 +1,8 @@
 <template>
   <card>
-    <b-row align-v="center" slot="header" >
+    <b-row align-v="center" slot="header">
       <b-col cols="8">
-        <h3 class="mb-0">Edit profile </h3>
+        <h3 class="mb-0">Edit profile</h3>
       </b-col>
       <b-col cols="4" class="text-right">
         <a href="#!" class="btn btn-sm btn-primary">Settings</a>
@@ -33,7 +33,7 @@
             </base-input>
           </b-col>
         </b-row>
-        <b-row >
+        <b-row>
           <b-col lg="6">
             <base-input
               type="text"
@@ -54,7 +54,7 @@
           </b-col>
         </b-row>
       </div>
-      <hr class="my-4">
+      <hr class="my-4" />
 
       <!-- Address -->
       <h6 class="heading-small text-muted mb-4">Contact information</h6>
@@ -101,16 +101,25 @@
         </b-row>
       </div>
 
-      <hr class="my-4">
+      <hr class="my-4" />
       <!-- Description -->
       <h6 class="heading-small text-muted mb-4">About me</h6>
       <div class="pl-lg-4">
-        <b-form-group label="About Me" label-class="form-control-label" class="mb-0" label-for="about-form-textaria">
-         <!--  <label class="form-control-label">About Me</label> -->
-          <b-form-textarea rows="4" value="A beautiful premium dashboard for BootstrapVue." id="about-form-textaria" placeholder="A few words about you ..."></b-form-textarea>
+        <b-form-group
+          label="About Me"
+          label-class="form-control-label"
+          class="mb-0"
+          label-for="about-form-textaria"
+        >
+          <!--  <label class="form-control-label">About Me</label> -->
+          <b-form-textarea
+            rows="4"
+            value="A beautiful premium dashboard for BootstrapVue."
+            id="about-form-textaria"
+            placeholder="A few words about you ..."
+          ></b-form-textarea>
         </b-form-group>
       </div>
-
     </b-form>
   </card>
 </template>
@@ -119,24 +128,24 @@ export default {
   data() {
     return {
       user: {
-        company: 'Creative Code Inc.',
-        username: 'michael23',
-        email: '',
-        firstName: 'Mike',
-        lastName: 'Andrew',
-        address: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
-        city: 'New York',
-        country: 'USA',
-        postalCode: '',
-        aboutMe: `Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.`
-      }
+        company: "Creative Code Inc.",
+        username: "michael23",
+        email: "",
+        firstName: "Mike",
+        lastName: "Andrew",
+        address: "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09",
+        city: "New York",
+        country: "USA",
+        postalCode: "",
+        aboutMe: `Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.`,
+      },
     };
   },
   methods: {
     updateProfile() {
-      alert('Your data: ' + JSON.stringify(this.user));
-    }
-  }
+      alert("Your data: " + JSON.stringify(this.user));
+    },
+  },
 };
 </script>
 <style></style>

@@ -2,14 +2,16 @@
   <div class="wrapper">
     <notifications></notifications>
     <side-bar>
-      <template slot-scope="props" slot="links">
+      <template slot="links">
         <sidebar-item
           :link="{
             name: 'Dashboards',
             icon: 'ni ni-shop text-primary',
           }"
         >
-          <sidebar-item :link="{ name: 'Dashboard', path: '/dashboard' }"></sidebar-item>
+          <sidebar-item
+            :link="{ name: 'Dashboard', path: '/dashboard' }"
+          ></sidebar-item>
         </sidebar-item>
       </template>
     </side-bar>
@@ -28,8 +30,8 @@
 </template>
 <script>
 /* eslint-disable no-new */
-import PerfectScrollbar from 'perfect-scrollbar';
-import 'perfect-scrollbar/css/perfect-scrollbar.css';
+import PerfectScrollbar from "perfect-scrollbar";
+import "perfect-scrollbar/css/perfect-scrollbar.css";
 
 function hasElement(className) {
   return document.getElementsByClassName(className).length > 0;
@@ -46,31 +48,29 @@ function initScrollbar(className) {
   }
 }
 
-import DashboardNavbar from './SampleNavbar.vue';
-import ContentFooter from './SampleFooter.vue';
-import DashboardContent from '../Layout/Content.vue';
-import { FadeTransition } from 'vue2-transitions';
+import DashboardNavbar from "./SampleNavbar.vue";
+import ContentFooter from "./SampleFooter.vue";
+import { FadeTransition } from "vue2-transitions";
 
 export default {
   components: {
     DashboardNavbar,
     ContentFooter,
-    DashboardContent,
     FadeTransition,
   },
   methods: {
     initScrollbar() {
       let docClasses = document.body.classList;
-      let isWindows = navigator.platform.startsWith('Win');
+      let isWindows = navigator.platform.startsWith("Win");
       if (isWindows) {
         // if we are on windows OS we activate the perfectScrollbar function
-        initScrollbar('scrollbar-inner');
+        initScrollbar("scrollbar-inner");
 
-        docClasses.add('perfect-scrollbar-on');
+        docClasses.add("perfect-scrollbar-on");
       } else {
-        docClasses.add('perfect-scrollbar-off');
+        docClasses.add("perfect-scrollbar-off");
       }
-    }
-  }
+    },
+  },
 };
 </script>

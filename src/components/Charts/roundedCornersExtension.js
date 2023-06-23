@@ -1,10 +1,10 @@
+/* eslint-disable no-unused-vars */
 //
 // Chart extension for making the bars rounded
 // Code from: https://codepen.io/jedtrow/full/ygRYgo
 //
-import Chart from 'chart.js'
-Chart.elements.Rectangle.prototype.draw = function() {
-
+import Chart from "chart.js";
+Chart.elements.Rectangle.prototype.draw = function () {
   let ctx = this._chart.ctx;
   let vm = this._view;
   let left, right, top, bottom, signX, signY, borderSkipped, radius;
@@ -21,7 +21,7 @@ Chart.elements.Rectangle.prototype.draw = function() {
     bottom = vm.base;
     signX = 1;
     signY = bottom > top ? 1 : -1;
-    borderSkipped = vm.borderSkipped || 'bottom';
+    borderSkipped = vm.borderSkipped || "bottom";
   } else {
     // horizontal bar
     left = vm.base;
@@ -30,7 +30,7 @@ Chart.elements.Rectangle.prototype.draw = function() {
     bottom = vm.y + vm.height / 2;
     signX = right > left ? 1 : -1;
     signY = 1;
-    borderSkipped = vm.borderSkipped || 'left';
+    borderSkipped = vm.borderSkipped || "left";
   }
 
   // Canvas doesn't allow us to stroke inside the width so we can
@@ -41,10 +41,12 @@ Chart.elements.Rectangle.prototype.draw = function() {
     borderWidth = borderWidth > barSize ? barSize : borderWidth;
     let halfStroke = borderWidth / 2;
     // Adjust borderWidth when bar top position is near vm.base(zero).
-    let borderLeft = left + (borderSkipped !== 'left' ? halfStroke * signX : 0);
-    let borderRight = right + (borderSkipped !== 'right' ? -halfStroke * signX : 0);
-    let borderTop = top + (borderSkipped !== 'top' ? halfStroke * signY : 0);
-    let borderBottom = bottom + (borderSkipped !== 'bottom' ? -halfStroke * signY : 0);
+    let borderLeft = left + (borderSkipped !== "left" ? halfStroke * signX : 0);
+    let borderRight =
+      right + (borderSkipped !== "right" ? -halfStroke * signX : 0);
+    let borderTop = top + (borderSkipped !== "top" ? halfStroke * signY : 0);
+    let borderBottom =
+      bottom + (borderSkipped !== "bottom" ? -halfStroke * signY : 0);
     // not become a vertical line?
     if (borderLeft !== borderRight) {
       top = borderTop;
@@ -69,11 +71,11 @@ Chart.elements.Rectangle.prototype.draw = function() {
     [left, bottom],
     [left, top],
     [right, top],
-    [right, bottom]
+    [right, bottom],
   ];
 
   // Find first (starting) corner with fallback to 'bottom'
-  let borders = ['bottom', 'left', 'top', 'right'];
+  let borders = ["bottom", "left", "top", "right"];
   let startCorner = borders.indexOf(borderSkipped, 0);
   if (startCorner === -1) {
     startCorner = 0;
@@ -91,7 +93,7 @@ Chart.elements.Rectangle.prototype.draw = function() {
     corner = cornerAt(i);
     let nextCornerId = i + 1;
     if (nextCornerId == 4) {
-      nextCornerId = 0
+      nextCornerId = 0;
     }
 
     let nextCorner = cornerAt(nextCornerId);
@@ -120,7 +122,6 @@ Chart.elements.Rectangle.prototype.draw = function() {
     ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
     ctx.lineTo(x, y + radius);
     ctx.quadraticCurveTo(x, y, x + radius, y);
-
   }
 
   ctx.fill();
