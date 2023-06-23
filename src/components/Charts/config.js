@@ -151,7 +151,6 @@ function chartOptions() {
     ticks: {
       padding: 20,
     },
-    maxBarThickness: 10,
   });
 
   return options;
@@ -221,6 +220,7 @@ export let lineChartOptionsBlue = {
     // eslint-disable-next-line no-dupe-keys
     dataset: [
       {
+        maxBarThickness: 10,
         barPercentage: 1.6,
         gridLines: {
           drawBorder: false,
