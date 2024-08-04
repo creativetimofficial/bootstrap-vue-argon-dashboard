@@ -27,6 +27,7 @@ If you want to get inspiration or just show something directly to your clients, 
 * [Versions](#versions)
 * [Demo](#demo)
 * [Quick Start](#quick-start)
+* [Deploy](#deploy)
 * [Documentation](#documentation)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
@@ -53,7 +54,7 @@ If you want to get inspiration or just show something directly to your clients, 
 
 | Dashboard Page | Icons Page | User Profile Page  | Tables Page | Login Page | Register Page  |
 | --- | --- | ---  | --- | --- | ---  |
-| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/dashboard.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/dashboard?ref=bvad-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/icons.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/icons?ref=bvad-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/user.png?raw=true)](https://demos.creative-tim.com/bootsrap-vue-argon-dashboard/#/profile?ref=bvad-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/tables.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/tables?ref=bvad-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/login.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/login?ref=bvad-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/register.png?raw=true)](https://demos.creative-tim.com/bootsrap-vue-argon-dashboard/#/register?ref=bvad-github-readme)  
+| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/dashboard.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/dashboard?ref=bvad-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/icons.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/icons?ref=bvad-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/user.png?raw=true)](https://demos.creative-tim.com/bootsrap-vue-argon-dashboard/#/profile?ref=bvad-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-argon-dashboard/tables.png)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/tables?ref=bvad-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/login.png?raw=true)](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/login?ref=bvad-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-dashboard/register.png?raw=true)](https://demos.creative-tim.com/bootsrap-vue-argon-dashboard/#/register?ref=bvad-github-readme)
 
 [View More](https://demos.creative-tim.com/bootstrap-vue-argon-dashboard/#/dashboard)
 
@@ -64,6 +65,11 @@ If you want to get inspiration or just show something directly to your clients, 
 - [Download from Creative Tim](https://www.creative-tim.com/product/bootstrap-vue-argon-dashboard?ref=bvad-github-readme).
 - Clone the repo: `git clone https://github.com/creativetimofficial/bootstrap-vue-argon-dashboard.git`.
 
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/bootstrap-vue-argon-dashboard&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Documentation
 The documentation for the BootsrapVue Argon Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/bootstrap-vue/colors/argon-dashboard).
