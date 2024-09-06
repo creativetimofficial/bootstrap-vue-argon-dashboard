@@ -22,7 +22,7 @@
              </router-link>
            </b-col>
            <b-col cols="6" class="collapse-close">
-             <button type="button" class="navbar-toggler" @click="showMenu = false">
+             <button type="button" class="navbar-toggler" @click="showMenu = false" v-b-toggle.nav-text-collapse>
                <span></span>
                <span></span>
              </button>

@@ -112,7 +112,9 @@ export default {
   },
   methods: {
     toggleMenu() {
-      this.$emit('change', !this.show);
+	  // this method is immediately hiding the navbar.
+	  // @change and :show is also not used by default, so this can be removed
+      //this.$emit('change', !this.show);
     },
     closeMenu() {
       this.$emit('change', false);
